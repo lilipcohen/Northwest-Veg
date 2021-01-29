@@ -2,6 +2,9 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const mysql = require('mysql');
 const path = require('path');
+const hbs = require('hbs');
+
+require('handlebars-form-helpers').register(hbs.handlebars);
 
 
 const app = express();
