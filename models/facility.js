@@ -18,24 +18,29 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        country: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
         postalcode: {
             type: DataTypes.INTEGER,
             allowNull: false,
+            len: [5]
+          
+        },
+        email: {
+            type: DataTypes.STRING,
+            allowNull: false,
             validate: {
-                len: [5]
+                isEmail: true
             }
+        },
+        description: {
+            type: DataTypes.STRING,
+            allowNull: true
         },
         image: {
             type: DataTypes.STRING,
-            // type: VARBINARY(MAX),
-            allowNull: true
+            allowNull: false
         }
 
     });
 
-
+   return Facility
 }

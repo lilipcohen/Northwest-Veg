@@ -1,4 +1,9 @@
-const recipes = require("./recipes.js");
-// const users = require("./users.js");
+const router = require("express").Router();
+const apiRoutes = require("./api")
+const htmlRoutes = require("./html")
 
-module.exports = recipes;
+
+router.use("/api", apiRoutes)
+router.use("/", htmlRoutes)
+
+module.exports = router;
