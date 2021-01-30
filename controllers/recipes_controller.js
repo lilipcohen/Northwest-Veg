@@ -1,17 +1,19 @@
 const express = require("express");
+const API_SECRET = "&app_id=c2461807&app_key=39f37f3b09b422381fe3146b1138f4c6";
 
-const router = express.Router();
+function allRecipes(inputRecipe) {
+   const queryURL =
+    "https://api.edamam.com/search?q=" +
+    inputRecipe +
+    API_SECRET;
 
-const recipe = require("../models/recipe.js");
-
-router.get("/", function(req, res) {
-  recipe.all(function(data) {
-    var hbsObject = {
-      recipe: data
-    };
-    console.log(hbsObject);
-    res.render("index", hbsObject);
+   fetch({
+    url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+      console.log(response)
+    // var recipeName = $("<h2>").text(response.name);
   });
-});
+};
 
-module.exports = router;
+module.exports = allRecipes;
