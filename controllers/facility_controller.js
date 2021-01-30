@@ -9,7 +9,7 @@ module.exports = {
     createFacility: function (req, res) {
         db.Facility.create(req.body).then(function (dbFacility) {
             res.json(dbFacility);
-        })
+        });
     }
 }
 
