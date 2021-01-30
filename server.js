@@ -1,13 +1,11 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
-const mysql = require('mysql');
-const path = require('path');
-const hbs = require('hbs');
 
-require('handlebars-form-helpers').register(hbs.handlebars);
 
+const db = require("./models")
 
 const app = express();
+const PORT = process.env.PORT || 8080
 
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
@@ -19,30 +17,15 @@ app.use(express.json());
 app.use(express.static('public'));
 
 
-require('./routes')(app);
+app.use(require('./routes'));
 
+ db.sequelize.sync().then(function(){
+     app.listen(PORT, function() {
+         console.log("App is listening on: " + PORT);
+     })
+ })
 
-app.use((req, res, next) => {
-    const err = new Error('Not Found');
-    err.status = 404;
-    next(err);
-});
-
-
-app.use((err, req, res, next) => {
-    res.status(err.status || 500);
-    res.render('error', {
-        message: err.message,
-        error: (app.get('env') === 'development') ? err : {}
-    })
-});
-
-
-
-
-
-
-module.exports = app;
+ 
 
 
 
