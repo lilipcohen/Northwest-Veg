@@ -30,7 +30,8 @@ module.exports = (sequelize, DataTypes) => {
             }
         },
         image: {
-            type: VARBINARY(MAX),
+            type: DataTypes.STRING,
+            // type: VARBINARY(MAX),
             allowNull: true
         }
 

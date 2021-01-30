@@ -1,7 +1,5 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
-const mysql = require('mysql');
-const path = require('path');
 const hbs = require('hbs');
 
 require('handlebars-form-helpers').register(hbs.handlebars);
@@ -19,8 +17,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 
-require('./routes')(app);
-
+app.use(require("./routes"));
 
 app.use((req, res, next) => {
     const err = new Error('Not Found');
@@ -36,9 +33,6 @@ app.use((err, req, res, next) => {
         error: (app.get('env') === 'development') ? err : {}
     })
 });
-
-
-
 
 
 
