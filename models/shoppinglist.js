@@ -10,5 +10,5 @@ module.exports = (sequelize, DataTypes) => {
       }
     });
   }
-  returnShoppinglist;
+  return Shoppinglist;
 }

@@ -1,5 +1,5 @@
 const express = require("express");
-const API_SECRET = "&app_id=c2461807&app_key=39f37f3b09b422381fe3146b1138f4c6—";
+const API_SECRET = "&app_id=c2461807&app_key=39f37f3b09b422381fe3146b1138f4c6";
 
 function allRecipes(inputRecipe) {
    const queryURL =
@@ -7,7 +7,7 @@ function allRecipes(inputRecipe) {
     inputRecipe +
     API_SECRET;
 
-  $.ajax({
+   fetch({
     url: queryURL,
     method: "GET",
   }).then(function (response) {
