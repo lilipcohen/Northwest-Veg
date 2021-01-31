@@ -6,9 +6,9 @@ function submitForm(form) {
 }
 
 // information of new facility from form gets displayed on facility page
-
-$(".submitbtn").on("submit", function () {
-
+// originally the submitbt had a . instead of the #. Switched on 'submit' to on 'click'
+$("#submitbtn").on("click", function () {
+    console.log("is this working");
     let newFacility = {
         name: $("#facility_name").val().trim(),
         address: $("#address").val().trim(),
@@ -18,8 +18,8 @@ $(".submitbtn").on("submit", function () {
         email: $("#email").val().trim(),
         description: $("#description").val().trim()
     };
-
-    submitForm();
+// passed in the information that we were receiving from the user in newFacility and passed it into submitForm
+    submitForm(newFacility);
 
     $.ajax("/api/facility", {
         type: "POST",
