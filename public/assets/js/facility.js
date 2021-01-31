@@ -1,5 +1,14 @@
-// information of new facility gets displayed on facility page
+// once form is submitted, a new form displays on the page
+function submitForm(form) {
+    $.post("/facilityform", form, function () {
+        window.location.href = "/facilityform";
+    });
+}
+
+// information of new facility from form gets displayed on facility page
+
 $(".submitbtn").on("submit", function () {
+
     let newFacility = {
         name: $("#facility_name").val().trim(),
         address: $("#address").val().trim(),
@@ -8,9 +17,9 @@ $(".submitbtn").on("submit", function () {
         postalcode: $("#postalcode").val().trim(),
         email: $("#email").val().trim(),
         description: $("#description").val().trim()
-    }
+    };
 
-
+    submitForm();
 
     $.ajax("/api/facility", {
         type: "POST",
@@ -19,6 +28,6 @@ $(".submitbtn").on("submit", function () {
         console.log("Created new facility");
         // Reload page to get updated list
         location.reload();
-    })
+    });
 });
 
