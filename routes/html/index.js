@@ -14,4 +14,12 @@ router.get("/facility", function(req, res) {
     res.render("facility");
 });
 
+router.get("/recipes", function(req, res) {
+    res.render("recipes");
+});
+
+router.get("/pagenotfound", function(req, res) {
+    res.render("404");
+});
+
 module.exports = router;
