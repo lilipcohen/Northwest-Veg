@@ -1,19 +1,21 @@
 const express = require("express");
-const API_SECRET = "&app_id=c2461807&app_key=39f37f3b09b422381fe3146b1138f4c6";
+const dotenv = require('dotenv').config()
 
-function allRecipes(inputRecipe) {
-   const queryURL =
-    "https://api.edamam.com/search?q=" +
-    inputRecipe +
-    API_SECRET;
+module.exports = {
+  allRecipes: function (req, res) {
+    const queryURL =
+      "https://api.edamam.com/search?q=all&app_id=" +
+      process.env.API_ID + "&app_key=" + process.env.API_KEY;
 
-   fetch({
-    url: queryURL,
-    method: "GET",
-  }).then(function (response) {
+    fetch({
+      url: queryURL,
+      method: "GET",
+    }).then(function (response) {
       console.log(response)
-    // var recipeName = $("<h2>").text(response.name);
-  });
-};
+      res.render('recipes/recipes', {
+        layout: 'main-recipes',
+      });
+    });
+  }
 
-module.exports = allRecipes;
+};
