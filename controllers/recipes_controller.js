@@ -1,4 +1,4 @@
-const express = require("express");
+// const express = require("express");
 const dotenv = require('dotenv').config()
 
 module.exports = {
@@ -12,7 +12,7 @@ module.exports = {
       method: "GET",
     }).then(function (response) {
       console.log(response)
-      res.render('recipes/recipes', {
+      res.render({
         layout: 'main-recipes',
       });
     });

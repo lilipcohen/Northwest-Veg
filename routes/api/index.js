@@ -3,6 +3,6 @@ const facilityRoutes = require("./facility")
 const recipeRoutes = require("./recipes")
 
 router.use("/facility", facilityRoutes)
-// router.use("/recipe", recipeRoutes)
+router.use("/recipe", recipeRoutes)
 
 module.exports = router;
