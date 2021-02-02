@@ -49,3 +49,20 @@ img {
 footer {   
     margin-top: 150px;
 }
+
+
+#submitbtn {
+  background-color: rgb(51, 62, 72);
+  
+}
+
+#facility_name,
+#address,
+#city,
+#state,
+#postalcode,
+#email,
+#description,
+#fform {
+  color: rgb(51, 62, 72);
+}
