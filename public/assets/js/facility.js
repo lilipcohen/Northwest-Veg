@@ -1,5 +1,6 @@
 // once form is submitted, a new form displays on the page
 function submitForm(form) {
+    console.log("hi");
     $.post("/facilityform", form, function () {
         window.location.href = "/facilityform";
     });
@@ -8,7 +9,7 @@ function submitForm(form) {
 // information of new facility from form gets displayed on facility page
 // originally the submitbt had a . instead of the #. Switched on 'submit' to on 'click'
 $("#submitbtn").on("click", function () {
-    console.log("is this working");
+    console.log("Hello")
     let newFacility = {
         name: $("#facility_name").val().trim(),
         address: $("#address").val().trim(),
@@ -18,6 +19,8 @@ $("#submitbtn").on("click", function () {
         email: $("#email").val().trim(),
         description: $("#description").val().trim()
     };
+
+   
 // passed in the information that we were receiving from the user in newFacility and passed it into submitForm
     submitForm(newFacility);
 
@@ -30,4 +33,3 @@ $("#submitbtn").on("click", function () {
         location.reload();
     });
 });
-

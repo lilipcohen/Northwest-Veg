@@ -12,9 +12,7 @@ module.exports = {
       method: "GET",
     }).then(function (response) {
       console.log(response)
-      res.render({
-        layout: 'main-recipes',
-      });
+      res.render("recipes");
     });
   }
 
