@@ -169,3 +169,7 @@ main {
 .h1reg {
   color: var(--primary-color);
 }
+
+#submitbtn {
+  background-color: var(--primary-color);
+}

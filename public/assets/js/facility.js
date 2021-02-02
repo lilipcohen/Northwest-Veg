@@ -7,7 +7,7 @@ function submitForm(form) {
 
 // information of new facility from form gets displayed on facility page
 
-$("#submitbtn").on("submit", function () {
+$("#submitbtn").on("click", function () {
     console.log("is this working");
     let newFacility = {
         name: $("#facility_name").val().trim(),
