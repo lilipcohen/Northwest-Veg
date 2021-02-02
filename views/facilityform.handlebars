@@ -1,44 +1,46 @@
-<h1 id="fform">Facility Form</h1>
-<div class="row">
-  <form class="col s12" id="facilform">
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="facility_name" type="text" class="validate">
-        <label class="active" id="facility_name" for="facility_name">Name</label>
+<section class="container center" id="form-container">
+  <h1 class="h1reg">Facility Form</h1>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="facility_name" type="text" class="validate">
+          <label class="active" id="facility_name" for="facility_name">Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="address" type="text" class="validate">
+          <label class="active" id="address" for="address">Address</label>
+        </div>
       </div>
-      <div class="input-field col s12">
-        <input id="address" type="text" class="validate">
-        <label class="active" id="address" for="address">Address</label>
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="city" type="text" class="validate">
+          <label class="active" id="city" for="city">City</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="state" type="text" class="validate">
+          <label class="active" id="state" for="state">State</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="postalcode" type="text" class="validate">
+          <label class="active" id="postalcode" for="postalcode">Postal Code</label>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s4">
-       <input id="city" type="text" class="validate">
-        <label class="active" id="city" for="city">City</label>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label class="active" id="email" for="email">Email</label>
+          <span class="helper-text" data-error="Please enter a valid email"></span>
+        </div>
       </div>
-      <div class="input-field col s4">
-        <input id="state" type="text" class="validate">
-        <label class="active" id="state" for="state">State</label>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="description" type="text" class="validate">
+          <label class="active" id="description" for="description">Description</label>
+        </div>
       </div>
-      <div class="input-field col s4">
-        <input id="postalcode" type="text" class="validate">
-        <label class="active" id="postalcode" for="postalcode">Postal Code</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="email" type="email" class="validate">
-        <label class="active" id="email" for="email">Email</label>
-         <span class="helper-text" data-error="Please enter a valid email"></span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="description" type="text" class="validate">
-        <label class="active" id="description" for="description">Description</label>
-      </div>
-    </div>
 
-    <a class="waves-effect waves-light btn-small" id="submitbtn">Submit</a>
-  </form>
-</div>
+      <a class="waves-effect #7cb342 light-green darken-1 btn" id="submitbtn">Submit</a>
+    </form>
+  </div>
+</section>
