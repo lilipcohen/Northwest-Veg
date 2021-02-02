@@ -152,9 +152,11 @@ main {
     transform: translateY(0);
 }
 
-/* #submitbtn {
-  background-color: rgb(51, 62, 72);
-  
+#form-container {
+  background:rgba(255,255,255, 0.9);
+  color: var(--secondary-color);
+  padding: 0 2% 2% 2%;
+  border-radius: 3px;
 }
 
 #facility_name,
@@ -164,6 +166,6 @@ main {
 #postalcode,
 #email,
 #description,
-#fform {
-  color: rgb(51, 62, 72);
-} */
+.h1reg {
+  color: var(--primary-color);
+}
