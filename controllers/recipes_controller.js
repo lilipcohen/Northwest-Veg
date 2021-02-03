@@ -9,8 +9,11 @@ module.exports = {
 
     const response = await fetch(queryURL)
     const result = await response.json();
+    const sendRecipes = {
+      result: result.hits
+    }
     
-    res.send(result);
+    res.render("recipelist", sendRecipes);
   }
 
 };
