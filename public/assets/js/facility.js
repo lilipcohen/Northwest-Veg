@@ -1,15 +1,34 @@
 // once form is submitted, a new form displays on the page
 function submitForm(form) {
-    console.log("hi");
     $.post("/facilityform", form, function () {
         window.location.href = "/facilityform";
     });
 }
 
+function submitFormData(newFacility) {
+    $.ajax("/api/facility", {
+        type: "POST",
+        data: newFacility
+    }).then(function () {
+        submitForm(newFacility);
+        
+    });
+}
+
+function displayFormData(newFacility) {
+    $.ajax("/api/facility", {
+        type: "GET",
+        data: newFacility
+    }).then(function (req, res) {
+        console.log("Please work");
+        
+    });
+}
+
 // information of new facility from form gets displayed on facility page
-// originally the submitbt had a . instead of the #. Switched on 'submit' to on 'click'
+
 $("#submitbtn").on("click", function () {
-    console.log("Hello")
+    
     let newFacility = {
         name: $("#facility_name").val().trim(),
         address: $("#address").val().trim(),
@@ -20,16 +39,10 @@ $("#submitbtn").on("click", function () {
         description: $("#description").val().trim()
     };
 
+   submitFormData(newFacility);
+   displayFormData(newFacility);
    
-// passed in the information that we were receiving from the user in newFacility and passed it into submitForm
-    submitForm(newFacility);
 
-    $.ajax("/api/facility", {
-        type: "POST",
-        data: newFacility
-    }).then(function () {
-        console.log("Created new facility");
-        // Reload page to get updated list
-        location.reload();
-    });
+    
 });
+

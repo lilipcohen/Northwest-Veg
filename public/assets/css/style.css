@@ -18,12 +18,7 @@ html {
     #ffffff 50%
   );
   min-height: 1000px;
-  font-family: "helvetica neue";
-}
-
-.logo {
-    height: 50px;
-    width: auto;
+  font-family: "Poppins";
 }
 
 h1 {
@@ -39,7 +34,14 @@ h1 {
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
-img {
+.home-logo {
+  max-width: 300px;
+  max-height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.home-image {
   object-fit: cover;
   width: 230px;
   height: 230px;
@@ -54,10 +56,6 @@ img {
   background-color: rgba(125, 191, 48);
   text-align: center;
   margin: 50px auto;
-}
-
-footer {   
-    margin-top: 120px;
 }
 
 header {
@@ -125,15 +123,15 @@ main {
 }
 
 .recipe-info span.veggie {
-    color: lightgreen;
+    background-color: lightgreen;
 }
 
 .recipe-info span.vegan {
-    color: darkgreen;
+  background-color: darkgreen;
 }
 
 .recipe-info span.gluten-free {
-    color: yellow;
+  background-color: yellowgreen;
 }
 
 .overview {
@@ -168,4 +166,22 @@ main {
 #description,
 .h1reg {
   color: var(--primary-color);
+}
+
+/* to keep footer at the bottom of a page whether page is empty or longer than screen */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
 }
