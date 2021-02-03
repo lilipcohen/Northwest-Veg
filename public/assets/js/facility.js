@@ -5,10 +5,30 @@ function submitForm(form) {
     });
 }
 
+function submitFormData(newFacility) {
+    $.ajax("/api/facility", {
+        type: "POST",
+        data: newFacility
+    }).then(function () {
+        submitForm(newFacility);
+        
+    });
+}
+
+function displayFormData(newFacility) {
+    $.ajax("/api/facility", {
+        type: "GET",
+        data: newFacility
+    }).then(function (req, res) {
+        console.log("Please work");
+        
+    });
+}
+
 // information of new facility from form gets displayed on facility page
 
 $("#submitbtn").on("click", function () {
-    console.log("is this working");
+    
     let newFacility = {
         name: $("#facility_name").val().trim(),
         address: $("#address").val().trim(),
@@ -19,15 +39,10 @@ $("#submitbtn").on("click", function () {
         description: $("#description").val().trim()
     };
 
-    submitForm(newFacility);
+   submitFormData(newFacility);
+   displayFormData(newFacility);
+   
 
-    $.ajax("/api/facility", {
-        type: "POST",
-        data: newFacility
-    }).then(function () {
-        console.log("Created new facility");
-        // Reload page to get updated list
-        location.reload();
-    });
+    
 });
 
