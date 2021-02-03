@@ -18,6 +18,10 @@ router.get("/recipes", function(req, res) {
     res.render("recipes");
 });
 
+router.get("/recipelist", function(req, res) {
+    res.render("recipelist");
+});
+
 router.get("/pagenotfound", function(req, res) {
     res.render("404");
 });
