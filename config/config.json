@@ -1,7 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "TheFlashwashere87!",
+
+    "password": "password",
+
     "database": "nwveg_db",
     "host": "127.0.0.1",
     "dialect": "mysql"

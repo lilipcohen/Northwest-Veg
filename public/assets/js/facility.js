@@ -1,16 +1,17 @@
 // once form is submitted, a new form displays on the page
-function submitForm(form) {
-    $.post("/facilityform", form, function () {
-        window.location.href = "/facilityform";
-    });
-}
+// function submitForm(form) {
+//     $.post("/facilityform", form, function () {
+//         window.location.href = "/facilityform";
+//     });
+// }
 
 function submitFormData(newFacility) {
     $.ajax("/api/facility", {
         type: "POST",
         data: newFacility
     }).then(function () {
-        submitForm(newFacility);
+        // submitForm(newFacility);
+        console.log("Facility created");
         
     });
 }
@@ -19,11 +20,14 @@ function displayFormData(newFacility) {
     $.ajax("/api/facility", {
         type: "GET",
         data: newFacility
-    }).then(function (req, res) {
-        console.log("Please work");
+    }).then(function (result) {
+        console.log(result);
+        // res.render("/facility", result);
+        
         
     });
 }
+
 
 // information of new facility from form gets displayed on facility page
 
