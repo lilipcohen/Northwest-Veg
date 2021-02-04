@@ -168,6 +168,16 @@ main {
   color: var(--primary-color);
 }
 
+.facilcard {
+  background-color: var(--secondary-color);
+}
+
+.card-content {
+  text-align: center;
+}
+
+
+
 /* to keep footer at the bottom of a page whether page is empty or longer than screen */
 html, body {
   height: 100%;

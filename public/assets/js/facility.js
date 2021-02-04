@@ -1,38 +1,18 @@
-// once form is submitted, a new form displays on the page
-// function submitForm(form) {
-//     $.post("/facilityform", form, function () {
-//         window.location.href = "/facilityform";
-//     });
-// }
 
 function submitFormData(newFacility) {
     $.ajax("/api/facility", {
         type: "POST",
         data: newFacility
     }).then(function () {
-        // submitForm(newFacility);
-        console.log("Facility created");
-        
-    });
-}
-
-function displayFormData(newFacility) {
-    $.ajax("/api/facility", {
-        type: "GET",
-        data: newFacility
-    }).then(function (result) {
-        console.log(result);
-        // res.render("/facility", result);
-        
-        
+         $("#facilform").hide();
+         $("#message").html("Success!");
     });
 }
 
 
-// information of new facility from form gets displayed on facility page
 
-$("#submitbtn").on("click", function () {
-    
+$("#facilform").on("submit", function (event) {
+    event.preventDefault();
     let newFacility = {
         name: $("#facility_name").val().trim(),
         address: $("#address").val().trim(),
@@ -44,7 +24,7 @@ $("#submitbtn").on("click", function () {
     };
 
    submitFormData(newFacility);
-   displayFormData(newFacility);
+
    
 
     
