@@ -13,8 +13,12 @@ router.get("/facilityform", function(req, res) {
 });
 
 router.get("/facility", function(req, res) {
+    db.Facility.findAll().then(function(dbFacility) {
+        console.log(dbFacility)
+        res.render("facility",{ facility: dbFacility });
+    })
     // res.render("facility", displayFormData);
-    res.render("facility");
+   
 });
 
 router.get("/recipes", function(req, res) {

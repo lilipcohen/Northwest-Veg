@@ -1,52 +1,46 @@
 <h1>Facilities</h1>
 
-{{!-- <section id="facilities">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <div class="panel panel-success panel-facility">
-                    <div class="panel-heading">{{#each this.name}}{{/each}} </div>
-                </div>
-            </div>
-        </div>
+{{!-- <div class="recipe">
+    <img src="https://post.healthline.com/wp-content/uploads/2020/08/reasons-to-eat-real-food-1200x628-facebook-1200x628.jpg"
+        alt="fruits and veggies" />
+    <div class="recipe-info">
+        {{#each facility}}
+        <h3>{{dataValues.name}}</h3>
+
+        <span class="veggie">VEG</span>
     </div>
-</section> --}}
+    <div class="overview">
+        <h3></h3>
+        {{dataValues.description}}
 
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-7" id="left-side">
-            {{log facility}}
-            <ul>
-
-                {{#each facility}}
-                
-
-                
-                    <p>
-                        {{id}}. {{name}}
-                        
-                        {{address}}
-                        
-                        {{city}}
-                        
-                        {{state}}
-                        
-                        {{postalcode}}
-                        
-                        {{email}}
-                        
-                        {{description}}
-
-
-
-                    </p>
-
-                
-                {{/each}}
-
-            </ul>
-
-        </div>
+        {{/each}}
+        <br><a class="waves-effect #7cb342 light-green darken-1 btn">Get recipes</a>
     </div>
-</div>
+</div> --}}
+
+
+{{#each facility}}
+
+
+
+<p>
+    {{dataValues.id}}. {{dataValues.name}}
+
+    {{dataValues.address}}
+
+    {{dataValues.city}}
+
+    {{dataValues.state}}
+
+    {{dataValues.postalcode}}
+
+    {{dataValues.email}}
+
+    {{dataValues.description}}
+
+
+
+</p>
+
+
+{{/each}}

@@ -4,16 +4,7 @@ module.exports = {
     getFacilities: function (req, res) {
         db.Facility.findAll().then(dbFacility => {
             res.json(dbFacility);
-            // res.render("/facility", {
-            //     layout: "facility",
-            //     facility: dbFacility
-            // });
-
-
-        // db.Facility.findAll().then(async dbFacility => {
-        //    const facility = res.json(dbFacility);
-        //  const facil = {name: facility.name}
-        //     await res.render("facility", facil)
+         
             
         });
     },
