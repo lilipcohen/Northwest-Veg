@@ -1,9 +1,8 @@
 const router = require("express").Router();
 const { getFacilities } = require("../../controllers/facility_controller");
 const db = require("../../models");
-// const facilityPage = require("../../public/assets/js/facility")
 
-// passed in 'home' into line 6 to display our home page. 
+
 router.get("/", function(req, res) {
     res.render("home");
 });
@@ -13,8 +12,11 @@ router.get("/facilityform", function(req, res) {
 });
 
 router.get("/facility", function(req, res) {
-    // res.render("facility", displayFormData);
-    res.render("facility");
+    db.Facility.findAll().then(function(dbFacility) {
+        res.render("facility",{ facility: dbFacility });
+    });
+   
+   
 });
 
 router.get("/recipes", function(req, res) {
