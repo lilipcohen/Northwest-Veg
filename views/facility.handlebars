@@ -1,46 +1,24 @@
 <h1>Facilities</h1>
 
-{{!-- <div class="recipe">
-    <img src="https://post.healthline.com/wp-content/uploads/2020/08/reasons-to-eat-real-food-1200x628-facebook-1200x628.jpg"
-        alt="fruits and veggies" />
-    <div class="recipe-info">
-        {{#each facility}}
-        <h3>{{dataValues.name}}</h3>
 
-        <span class="veggie">VEG</span>
+<div class="row">
+    {{#each facility}}
+    <div class="col s12 m4">
+        <div class="card sticky-action">
+            <div class=" card facilcard">
+                <div class="card-content white-text">
+                    <h3 style="font-size:20px">{{dataValues.name}}</h3>
+                    <p>{{dataValues.address}}</p>
+                    <span>{{dataValues.city}} {{dataValues.state}} {{dataValues.postalcode}}</span>
+                    
+                    <p>{{dataValues.email}}</p>
+                    
+                        <p>Description: {{dataValues.description}}</p>
+                  
+
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="overview">
-        <h3></h3>
-        {{dataValues.description}}
-
-        {{/each}}
-        <br><a class="waves-effect #7cb342 light-green darken-1 btn">Get recipes</a>
-    </div>
-</div> --}}
-
-
-{{#each facility}}
-
-
-
-<p>
-    {{dataValues.id}}. {{dataValues.name}}
-
-    {{dataValues.address}}
-
-    {{dataValues.city}}
-
-    {{dataValues.state}}
-
-    {{dataValues.postalcode}}
-
-    {{dataValues.email}}
-
-    {{dataValues.description}}
-
-
-
-</p>
-
-
-{{/each}}
+    {{/each}}
+</div>
