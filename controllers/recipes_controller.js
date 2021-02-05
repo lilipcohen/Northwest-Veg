@@ -12,7 +12,7 @@ module.exports = {
     const sendRecipes = {
       result: result.hits
     }
-    
+    console.log(result);
     res.render("recipelist", sendRecipes);
   }
 
