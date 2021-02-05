@@ -1,15 +1,16 @@
-<h1>Recipes</h1>
-<main id="main" class="row">
-    <div class="recipe">{{#each result}}<div>
-            <section class="col-lg-3"></section>
-            <img class="home-image" src={{recipe.image}} alt="fruits and veggies" />
-            <div class="recipe-info">
-                <h3 style="font-size:20px">{{recipe.label}}</h3>
-                <span class="veggie">VEG</span>
-            </div>
-            <div class="overview">
-                <a href={{recipe.url}}>Click here for the Recipe!</a>
-            </div>
-            </section>
-        </div>{{/each}}</div>
-</main>
+<section class="container center" id="form-container">
+    <h1>Recipes</h1>
+    <main id="main" class="row">
+        <div class="recipe">{{#each result}}<div>
+                <section class="col-lg-3"></section>
+                <img class="home-image" src={{recipe.image}} alt="fruits and veggies" />
+                <div class="recipe-info">
+                    <h3 style="font-size:20px">{{recipe.label}}</h3>
+                    <span class="veggie">VEG</span>
+                </div>
+                <div class="overview">
+                    <a href={{recipe.url}}>Click here for the Recipe!</a>
+                </div>
+            </div>{{/each}}</div>
+    </main>
+</section>
