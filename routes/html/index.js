@@ -11,9 +11,9 @@ router.get("/facilityform", function(req, res) {
     res.render("facilityform");
 });
 
-router.get("/facility", function(req, res) {
+router.get("/facilities", function(req, res) {
     db.Facility.findAll().then(function(dbFacility) {
-        res.render("facility",{ facility: dbFacility });
+        res.render("facilities",{ facility: dbFacility });
     });
    
    
