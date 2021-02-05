@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;400&display=swap");
 
 :root {
   --primary-color: rgba(125, 191, 48);
@@ -49,7 +49,7 @@ h1 {
 }
 
 .textbox {
-    padding: 15px;
+  padding: 15px;
 }
 
 #heading {
@@ -59,71 +59,71 @@ h1 {
 }
 
 header {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .search {
-    background-color: transparent;
-    border: 2px solid var(--primary-color);
-    border-radius: 50px;
-    font-family: inherit;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    color: var(--secondary-color);
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: var(--secondary-color);
 }
 
 .search::placeholder {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .search:focus {
-    outline: none;
-    background-color: var(--primary-color);
+  outline: none;
+  background-color: var(--primary-color);
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .recipe {
-    width: 300px;
-    margin: 1rem;
-    background-color: var(--secondary-color);
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-    border-radius: 3px;
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
 }
 
 .recipe img {
-    width: 100%;
+  width: 100%;
 }
 
 .recipe-info {
-    color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1rem 1rem;
-    letter-spacing: 0.5px;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
 }
 
 .recipe-info h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .recipe-info span {
-    background-color: var(--primary-color);
-    padding: 0.25rem 0.5rem;
-    border-radius: 3px;
-    font-weight: bold;
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
 .recipe-info span.veggie {
-    background-color: lightgreen;
+  background-color: lightgreen;
 }
 
 .recipe-info span.vegan {
@@ -135,23 +135,23 @@ main {
 }
 
 .overview {
-    background-color: #fff;
-    padding: 2rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    max-height: 100%;
-    transform: translateY(101%);
-    transition: transform 0.3s ease-in;
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
 }
 
 .recipe:hover .overview {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 #form-container {
-  background:rgba(255,255,255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--secondary-color);
   padding: 0 2% 2% 2%;
   border-radius: 3px;
@@ -176,10 +176,8 @@ main {
   text-align: center;
 }
 
-
-
-/* to keep footer at the bottom of a page whether page is empty or longer than screen */
-html, body {
+html,
+body {
   height: 100%;
 }
 

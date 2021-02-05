@@ -1,6 +1,6 @@
 
 function submitFormData(newFacility) {
-    $.ajax("/api/facility", {
+    $.ajax("/api/facilities", {
         type: "POST",
         data: newFacility
     }).then(function () {
