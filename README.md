@@ -58,7 +58,8 @@ node i sequelize
 <img src="https://avatars.githubusercontent.com/u/71291602?s=460&u=0a57edde8d1542a08429d187f505e985f42d434b&v=4" alt="GitHub profile image" width="150">
 </p>
 <br>
-If you have any questions or want to make a contribution please reach out to me here: <br>
+#### If you have any questions or want to make a contribution please reach out to us here: 
+<br>
 
 **GitHub:** 
 * @tomarapetty 
