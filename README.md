@@ -39,7 +39,7 @@ node i sequelize
 *Instructions and examples for use:* 
 * Need to add here!
 
-<img src="/assets/img/nwveg.gif">
+<img src="./assets/img/nwveg.gif">
 
 ## License 
 * Built under the MIT licence.
@@ -58,7 +58,19 @@ node i sequelize
 <br>
 If you have any questions or want to make a contribution please reach out to me here: 
 
-* GitHub: @tomarapetty @lilipcohen @markos-escalante @katnguyenn 
-* Email: nguyenkat01@yahoo.com, tomararuth@gmail.com, lili.cohen.tv@gmail.com & escalante.markos18@gmail.com
-* LinkedIn: Tomara: https://www.linkedin.com/in/tomara-petty/ Lili: http://www.linkedin.com/in/lili-cohen-78a93a1b3 Kat: https://www.linkedin.com/in/katherine-nguyen-205a7b13a/ Markos: https://www.linkedin.com/feed/
+**GitHub:** 
+* @tomarapetty 
+* @lilipcohen 
+* @markos-escalante 
+* @katnguyenn <br>
+**Email:** 
+* nguyenkat01@yahoo.com
+* tomararuth@gmail.com 
+* lili.cohen.tv@gmail.com 
+* escalante.markos18@gmail.com <br>
+**LinkedIn:** 
+* Tomara: https://www.linkedin.com/in/tomara-petty/ 
+* Lili: http://www.linkedin.com/in/lili-cohen-78a93a1b3 
+* Kat: https://www.linkedin.com/in/katherine-nguyen-205a7b13a/ 
+* Markos: https://www.linkedin.com/feed/
 
