@@ -39,7 +39,7 @@ node i sequelize
 *Instructions and examples for use:* 
 * Need to add here!
 
-<img src="/assets/img/nwveg.gif">
+<img src="./public/assets/img/nwveg.gif">
 
 ## License 
 * Built under the MIT licence.
@@ -51,14 +51,32 @@ node i sequelize
 * No tests required. 
 
 ## Questions?
-<img src="https://avatars0.githubusercontent.com/u/65513543?s=460&u=20bf726727263d5c2cb42b357ae261aff2a38e6e&v=4" alt="GitHub profile image">
-<img src="https://avatars.githubusercontent.com/u/69019881?s=460&u=6854268124a5fbb368c638a74662e170b27b5e15&v=4" alt="GitHub profile image">
-<img src="https://avatars.githubusercontent.com/u/70539107?s=460&u=19c6e1600b5f4d010ab5ab4f3527e2dcf96a1b2f&v=4" alt="GitHub profile image">
-<img src="https://avatars.githubusercontent.com/u/71291602?s=460&u=0a57edde8d1542a08429d187f505e985f42d434b&v=4" alt="GitHub profile image">
+<p float="left">
+<img src="https://avatars0.githubusercontent.com/u/65513543?s=460&u=20bf726727263d5c2cb42b357ae261aff2a38e6e&v=4" alt="GitHub profile image" width="150">
+<img src="https://avatars.githubusercontent.com/u/69019881?s=460&u=6854268124a5fbb368c638a74662e170b27b5e15&v=4" alt="GitHub profile image" width="150">
+<img src="https://avatars.githubusercontent.com/u/70539107?s=460&u=19c6e1600b5f4d010ab5ab4f3527e2dcf96a1b2f&v=4" alt="GitHub profile image" width="150">
+<img src="https://avatars.githubusercontent.com/u/71291602?s=460&u=0a57edde8d1542a08429d187f505e985f42d434b&v=4" alt="GitHub profile image" width="150">
+</p>
 <br>
-If you have any questions or want to make a contribution please reach out to me here: 
 
-* GitHub: @tomarapetty @lilipcohen @markos-escalante @katnguyenn 
-* Email: nguyenkat01@yahoo.com, tomararuth@gmail.com, lili.cohen.tv@gmail.com & escalante.markos18@gmail.com
-* LinkedIn: Tomara: https://www.linkedin.com/in/tomara-petty/ Lili: http://www.linkedin.com/in/lili-cohen-78a93a1b3 Kat: https://www.linkedin.com/in/katherine-nguyen-205a7b13a/ Markos: https://www.linkedin.com/feed/
+#### If you have any questions or want to make a contribution please reach out to us here:
+<br>
+
+**GitHub:** 
+* @tomarapetty 
+* @lilipcohen 
+* @markos-escalante 
+* @katnguyenn <br>
+
+**Email:** 
+* nguyenkat01@yahoo.com
+* tomararuth@gmail.com 
+* lili.cohen.tv@gmail.com 
+* escalante.markos18@gmail.com <br>
+
+**LinkedIn:** 
+* Tomara: https://www.linkedin.com/in/tomara-petty/ 
+* Lili: http://www.linkedin.com/in/lili-cohen-78a93a1b3 
+* Kat: https://www.linkedin.com/in/katherine-nguyen-205a7b13a/ 
+* Markos: https://www.linkedin.com/feed/
 
