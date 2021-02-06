@@ -59,7 +59,7 @@ node i sequelize
 </p>
 <br>
 
-**If you have any questions or want to make a contribution please reach out to us here:**
+### If you have any questions or want to make a contribution please reach out to us here:
 <br>
 
 **GitHub:** 
