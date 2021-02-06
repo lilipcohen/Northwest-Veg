@@ -39,7 +39,7 @@ node i sequelize
 *Instructions and examples for use:* 
 * On the home page you will find the three main categories. 
 1. Nutritional info section 
-    1. You can click on this section to go to the info page. The info page gives information about a veg diet and nutiritional information. 
+    1. You can click on this section to go to the info page where the user can find health information about a veg diet and as well nutritional information, ie: "where to get your protien" and "is it healty to go veg" etc. 
 2. Recipe section
     1. If you click on the recipe section in the center you will be taken to a recipe page that has popular categories of recipies like breakfast, lunch, dinner, etc. 
     2. There is also a search bar at the top where you can search for any type of veg recipies you would like to find. 
