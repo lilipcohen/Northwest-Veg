@@ -39,7 +39,7 @@ node i sequelize
 *Instructions and examples for use:* 
 * Need to add here!
 
-<img src="./assets/img/nwveg.gif">
+<img src="./public/assets/img/nwveg.gif">
 
 ## License 
 * Built under the MIT licence.
@@ -56,7 +56,7 @@ node i sequelize
 <img src="https://avatars.githubusercontent.com/u/70539107?s=460&u=19c6e1600b5f4d010ab5ab4f3527e2dcf96a1b2f&v=4" alt="GitHub profile image" width="150">
 <img src="https://avatars.githubusercontent.com/u/71291602?s=460&u=0a57edde8d1542a08429d187f505e985f42d434b&v=4" alt="GitHub profile image" width="150">
 <br>
-If you have any questions or want to make a contribution please reach out to me here: 
+If you have any questions or want to make a contribution please reach out to me here: <br>
 
 **GitHub:** 
 * @tomarapetty 
