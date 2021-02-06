@@ -4,8 +4,8 @@ const dotenv = require('dotenv').config()
 module.exports = {
   allRecipes: async function (req, res) {
     const queryURL =
-      "https://api.edamam.com/search?q=&app_id=c2461807" +
-      "&app_key=2623bf0a7f87d43e734fcd2eb0586b5f" + "&from=0&to=10&health=vegetarian";
+      "https://api.edamam.com/search?q=&app_id=" +
+      process.env.API_ID + "&app_key=" + process.env.API_KEY + "&from=0&to=10&health=vegetarian";
 
     const response = await fetch(queryURL)
     const result = await response.json();
