@@ -38,9 +38,15 @@ node i sequelize
 ## Usage
 *Instructions and examples for use:* 
 * On the home page you will find the three main categories. 
-1. On the far left there is an info section where you can click to go to the info page. The info page gives information about a veg diet and nutiritional information. 
-2. If you click on the recipe section in the center you will be taken to a recipe page that has popular categories of recipies like breakfast, lunch, dinner, etc. There is also a search bar at the top where you can search for any type of veg recipies you would like to find. After you have found the recipe you are looking for you can add the ingridience to your shopping list. 
-3. The third section on the right of the home page is the facility section. This is where users can find facilities that provide a veg menu. We created a form page where the admins can enter faciliities that will then be stored in the data base and will be displayed on the facilities page.  
+1. Nutritional info section 
+    1. You can click on this section to go to the info page. The info page gives information about a veg diet and nutiritional information. 
+2. Recipe section
+    1. If you click on the recipe section in the center you will be taken to a recipe page that has popular categories of recipies like breakfast, lunch, dinner, etc. 
+    2. There is also a search bar at the top where you can search for any type of veg recipies you would like to find. 
+    3. After you have found the recipe you are looking for you can add the ingridience to your shopping list. 
+3. Facility section
+    1. This is where users can find facilities that provide a veg menu. 
+    2. We created a form page where the admins can enter faciliities that will then be stored in the data base and will be displayed on the facilities page.  
 
 <img src="./public/assets/img/nwveg.gif">
 
