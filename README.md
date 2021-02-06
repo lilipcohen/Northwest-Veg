@@ -15,11 +15,25 @@
 
 ## Description 
 *Overview of this project:* 
-* We set out to create a website for our client Northwest Veg that would pull vegitarian recipies as well as feature facilities that serve vegitarian meals.
+* We set out to build an application that allows user's and facilities that are interested in incorporating a plant based diet into their programs and lives! We make it simple by providing informative articles, a recipes page that allows you to filter by ingredient(s) to help you make your desired meal, and having an accessible and easy to fill out form for interested facilites.
 
 ## Installation
 *Steps required to install project and get the development environment established:*
-* Need to add some more stuff here!
+* Simply use the npm install command in your terminal to install all necessary packages to launch our plant based application!
+
+```bash
+node i dotenv
+node i express
+node i express-handlebars
+node i handlebars
+node i handlebars-form-helpers
+node i hbs
+node i materialize-css
+node i mysql
+node i mysql12
+node i node-fetch
+node i sequelize
+```
 
 ## Usage
 *Instructions and examples for use:* 
@@ -47,3 +61,4 @@ If you have any questions or want to make a contribution please reach out to me 
 * GitHub: @tomarapetty @lilipcohen @markos-escalante @katnguyenn 
 * Email: nguyenkat01@yahoo.com, tomararuth@gmail.com, lili.cohen.tv@gmail.com & escalante.markos18@gmail.com
 * LinkedIn: Tomara: https://www.linkedin.com/in/tomara-petty/ Lili: http://www.linkedin.com/in/lili-cohen-78a93a1b3 Kat: https://www.linkedin.com/in/katherine-nguyen-205a7b13a/ Markos: https://www.linkedin.com/feed/
+
