@@ -150,6 +150,11 @@ main {
   transform: translateY(0);
 }
 
+.container-recipe {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #form-container {
   background: rgba(255, 255, 255, 0.9);
   color: var(--secondary-color);
