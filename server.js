@@ -20,11 +20,13 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
- db.sequelize.sync().then(function(){
-     app.listen(PORT, function() {
-         console.log("App is listening on: " + PORT);
-     })
- })
+db.sequelize.sync().then(function () {
+    app.listen(PORT, function () {
+        console.log("App is listening on: " + PORT);
+    })
+}).catch(function (error) {
+    console.log("error")
+});
 
  
 
