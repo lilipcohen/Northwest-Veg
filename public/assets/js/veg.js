@@ -34,7 +34,7 @@ async function searchRecipe() {
 
             })
                 .then(function (results) {
-                   const userSearch = JSON.parse(results);
+                //    const userSearch = JSON.parse(results);
                    $("#main").html(results);
                 });
         }
