@@ -19,4 +19,7 @@ router.route("/allgluten")
 router.route("/allallergen")
     .get(recipes_controller.allAllergen)
 
+router.route("/:keyword")
+    .get(recipes_controller.searchRecipe)
+
 module.exports = router; 
