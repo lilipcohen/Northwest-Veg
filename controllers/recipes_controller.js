@@ -47,6 +47,7 @@ module.exports = {
     res.json(result.hits)
   },
   
+  
   allBreakfast: async function (req, res) {
 
     res.render("recipelist", await fetchRecipes("&mealType=Breakfast"));

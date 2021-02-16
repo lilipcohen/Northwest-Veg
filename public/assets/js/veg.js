@@ -32,8 +32,7 @@ async function searchRecipe() {
                 method: "GET",
                 url: "/api/recipe/" + userInput
 
-            })
-                .then(function (results) {
+            }).then(function (results) {
                 //    const userSearch = JSON.parse(results);
                    $("#main").html(results);
                 });
