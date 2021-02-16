@@ -22,4 +22,7 @@ router.route("/allallergen")
 router.route("/:keyword")
     .get(recipes_controller.searchRecipe)
 
+
+    
+
 module.exports = router; 

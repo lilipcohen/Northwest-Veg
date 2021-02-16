@@ -24,10 +24,7 @@ db.sequelize.sync().then(function () {
     app.listen(PORT, function () {
         console.log("App is listening on: " + PORT);
     })
-}).catch(function (error) {
-    console.log("error")
-});
-
+}) 
  
 
 
