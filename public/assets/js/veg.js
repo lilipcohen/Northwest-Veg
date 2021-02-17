@@ -24,3 +24,7 @@ async function searchRecipe() {
 
 searchRecipe();
 
+$("#ingredientsBtn").on("submit", function (event) {
+    event.preventDefault();
+    $('#ingredients')
+});
