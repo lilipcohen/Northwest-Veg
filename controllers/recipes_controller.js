@@ -1,5 +1,5 @@
 const fetch = require("node-fetch");
-const dotenv = require('dotenv').config()
+const dotenv = require('dotenv').config() 
 
 async function fetchRecipes(categoryquery) {
   const queryURL =
@@ -20,7 +20,7 @@ module.exports = {
   allRecipes: async function (req, res) {
     const queryURL =
       "https://api.edamam.com/search?q=&app_id=" +
-      process.env.API_ID + "&app_key=" + process.env.API_KEY + "&from=0&to=10&health=vegan";
+      process.env.API_ID + "&app_key=" + process.env.API_KEY + "&from=0&to=10&health=vegan&alcohol-free" + categoryquery;
 
     const response = await fetch(queryURL)
     const result = await response.json();
@@ -36,8 +36,8 @@ module.exports = {
 
     const keyword = req.params.keyword
     const queryURL =
-      "https://api.edamam.com/search?q=" + keyword + "&app_id=" +
-      process.env.API_ID + "&app_key=" + process.env.API_KEY + "&from=0&to=10&health=vegan";
+      "https://api.edamam.com/search?q=&app_id=" +
+      process.env.API_ID + "&app_key=" + process.env.API_KEY + "&from=0&to=10&health=vegan&alcohol-free";
 
     const response = await fetch(queryURL)
     const result = await response.json();
