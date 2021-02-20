@@ -44,7 +44,7 @@ module.exports = {
     const sendRecipes = {
       result: result.hits
     }
-    res.json(result.hits)
+    res.json(result.hits);
   },
   
   allBreakfast: async function (req, res) {
