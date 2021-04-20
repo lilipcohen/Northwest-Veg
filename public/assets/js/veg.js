@@ -30,10 +30,14 @@ function getBreakfast() {
                     <span class="veggie">VEG</span>
                 </div>
                 <div class="overview">
-                    <h3>${response.recipe.label}</h3>
+                    <h4>${response.recipe.label}</h4>
+                   
+                    
+                    
                     <p id="ingredients">${response.recipe.ingredientLines}</p>
-                    <button id="ingredientsBtn" type="submit">Add to cart</button>
-                    <a href=${response.recipe.url} target="_blank">Click here for the Recipe!</a>
+                    <button id="ingredientsBtn" type="submit" class="btn #1B5E20 green darken-4">Add to Shopping List</button>
+                    <br><br>
+                    <a href=${response.recipe.url} target="_blank" class="btn #1B5E20 green darken-4">Click here for the Recipe!</a>
                     
                     
                 </div>
@@ -73,10 +77,13 @@ function getLunchDin() {
                         <span class="veggie">VEG</span>
                     </div>
                     <div class="overview">
-                        <h3>${response.recipe.label}</h3>
+                        <h4>${response.recipe.label}</h4>
+                       
+        
                       <p id="ingredients">${response.recipe.ingredientLines}</p>
-                    <button id="ingredientsBtn" type="submit">Add to cart</button>
-                    <a href=${response.recipe.url} target="_blank">Click here for the Recipe!</a>
+                      <button id="ingredientsBtn" type="submit">Add to Shopping List</button>
+                      <br><br>
+                      <a href=${response.recipe.url} target="_blank" class="btn #1B5E20 green darken-4">Click here for the Recipe!</a>
                         
                     </div>
                 </div>
@@ -112,10 +119,14 @@ function getDesserts() {
                             <span class="veggie">VEG</span>
                         </div>
                         <div class="overview">
-                            <h3>${response.recipe.label}</h3>
+                            <h4>${response.recipe.label}</h4>
+                           
+            
+                            
                             <p id="ingredients">${response.recipe.ingredientLines}</p>
-                    <button id="ingredientsBtn" type="submit">Add to cart</button>
-                    <a href=${response.recipe.url} target="_blank">Click here for the Recipe!</a>
+                            <button id="ingredientsBtn" type="submit">Add to Shopping List</button>
+                            <br><br>
+                            <a href=${response.recipe.url} target="_blank" class="btn #1B5E20 green darken-4">Click here for the Recipe!</a>
                             
                         </div>
                     </div>
@@ -151,9 +162,13 @@ function getSnacks() {
                               <span class="veggie">VEG</span>
                           </div>
                           <div class="overview">
-                              <h3>${response.recipe.label}</h3>
+                              <h4>${response.recipe.label}</h4>
+                              <a href="#" onclick='window.open("${response.recipe.url}");return false;'><button>Get Recipe<button></a>
+              
+                            
                               <p id="ingredients">${response.recipe.ingredientLines}</p>
                     <button id="ingredientsBtn" type="submit">Add to cart</button>
+                    <br><br>
                     <a href=${response.recipe.url} target="_blank">Click here for the Recipe!</a>
                               
                           </div>
@@ -190,10 +205,14 @@ function getGlutenFree() {
                             <span class="veggie">VEG</span>
                         </div>
                         <div class="overview">
-                            <h3>${response.recipe.label}</h3>
+                            <h4>${response.recipe.label}</h4>
+                           
+            
+                            
                             <p id="ingredients">${response.recipe.ingredientLines}</p>
-                    <button id="ingredientsBtn" type="submit">Add to cart</button>
-                    <a href=${response.recipe.url} target="_blank">Click here for the Recipe!</a>
+                            <button id="ingredientsBtn" type="submit">Add to Shopping List</button>
+                            <br><br>
+                            <a href=${response.recipe.url} target="_blank" class="btn #1B5E20 green darken-4">Click here for the Recipe!</a>
                             
                         </div>
                     </div>
@@ -229,10 +248,15 @@ function getAllergen() {
                               <span class="veggie">VEG</span>
                           </div>
                           <div class="overview">
-                              <h3>${response.recipe.label}</h3>
+                              <h4>${response.recipe.label}</h4>
+                              
+              
+              
+                           
                               <p id="ingredients">${response.recipe.ingredientLines}</p>
-                    <button id="ingredientsBtn" type="submit">Add to cart</button>
-                    <a href=${response.recipe.url} target="_blank">Click here for the Recipe!</a>
+                              <button id="ingredientsBtn" type="submit">Add to Shopping List</button>
+                              <br><br>
+                              <a href=${response.recipe.url} target="_blank" class="btn #1B5E20 green darken-4">Click here for the Recipe!</a>
                               
                           </div>
                       </div>
@@ -277,9 +301,13 @@ function searchRecipe() {
                     </div>
                     <div class="overview">
                         <h4>${response.recipe.label}</h4>
+                        
+                      
+        
                       <p id="ingredients">${response.recipe.ingredientLines}</p>
-                    <button id="ingredientsBtn" type="submit">Add to cart</button>
-                    <a href=${response.recipe.url} target="_blank">Click here for the Recipe!</a>
+                    <button id="ingredientsBtn" type="submit" class="btn #1B5E20 green darken-4">Add to Shopping List</button>
+                    <br><br>
+                    <a href=${response.recipe.url} target="_blank" class="btn #1B5E20 green darken-4">Click here for the Recipe!</a>
                         
                     </div>
                    
