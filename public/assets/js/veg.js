@@ -1,4 +1,6 @@
-$(document).ready(function () {
+// const { response } = require("express");
+
+// Breakfast
   function getBreakfast() {
     // $.ajax({
     //   method: "GET",
@@ -29,9 +31,11 @@ $(document).ready(function () {
                 </div>
                 <div class="overview">
                     <h3>${response.recipe.label}</h3>
-    
+                    
                     
                 </div>
+                
+              
             </div>
     
             
@@ -44,9 +48,8 @@ $(document).ready(function () {
     console.log('breakfast button clicked');
     getBreakfast();
   });
-});
 
-$(document).ready(function () {
+// Lunch
   function getLunchDin() {
     $.ajax({
       method: 'GET',
@@ -82,9 +85,8 @@ $(document).ready(function () {
     console.log('lunchdin button clicked');
     getLunchDin();
   });
-});
 
-$(document).ready(function () {
+// Dessert
   function getDesserts() {
     $.ajax({
       method: 'GET',
@@ -120,19 +122,19 @@ $(document).ready(function () {
     console.log('desserts button clicked');
     getDesserts();
   });
-});
 
-$(document).ready(function () {
-    function getSnacks() {
-      $.ajax({
-        method: 'GET',
-        url: '/api/recipe/allsnacks',
-      }).then(results => {
-        console.log(results);
-  
-        $('.userSearchRecipe').empty();
-        results.forEach(function (response) {
-          $('.userSearchRecipe').append(` 
+
+// Snacks
+  function getSnacks() {
+    $.ajax({
+      method: 'GET',
+      url: '/api/recipe/allsnacks',
+    }).then(results => {
+      console.log(results);
+
+      $('.userSearchRecipe').empty();
+      results.forEach(function (response) {
+        $('.userSearchRecipe').append(` 
                           
                           <div class="recipe">
                           <img class="home-image"
@@ -150,17 +152,17 @@ $(document).ready(function () {
                       </div>
               
                       `);
-        });
       });
-    }
-  
-    $('.snacks').on('click', function (event) {
-      console.log('snacks button clicked');
-      getSnacks();
     });
+  }
+
+  $('.snacks').on('click', function (event) {
+    console.log('snacks button clicked');
+    getSnacks();
   });
 
-$(document).ready(function () {
+
+// Gluten Free
   function getGlutenFree() {
     $.ajax({
       method: 'GET',
@@ -196,19 +198,19 @@ $(document).ready(function () {
     console.log('snacks button clicked');
     getGlutenFree();
   });
-});
 
-$(document).ready(function () {
-    function getAllergen() {
-      $.ajax({
-        method: 'GET',
-        url: '/api/recipe/allallergen',
-      }).then(results => {
-        console.log(results);
-  
-        $('.userSearchRecipe').empty();
-        results.forEach(function (response) {
-          $('.userSearchRecipe').append(` 
+
+// Allergen
+  function getAllergen() {
+    $.ajax({
+      method: 'GET',
+      url: '/api/recipe/allallergen',
+    }).then(results => {
+      console.log(results);
+
+      $('.userSearchRecipe').empty();
+      results.forEach(function (response) {
+        $('.userSearchRecipe').append(` 
                           
                           <div class="recipe">
                           <img class="home-image"
@@ -226,18 +228,21 @@ $(document).ready(function () {
                       </div>
               
                       `);
-        });
       });
-    }
-  
-    $('.allergen').on('click', function (event) {
-      console.log('allergen button clicked');
-      getAllergen();
     });
+  }
+
+  $('.allergen').on('click', function (event) {
+    console.log('allergen button clicked');
+    getAllergen();
   });
+
+// Recipe Search
+
 
 function searchRecipe() {
   const searchBar = document.getElementById('search');
+  
 
   searchBar.addEventListener('keyup', e => {
     const userInput = e.target.value;
@@ -250,6 +255,8 @@ function searchRecipe() {
         console.log(results);
         $('.userSearchRecipe').empty();
         results.forEach(function (response) {
+          const recipeURL = response.recipe.url
+          console.log(recipeURL)
           $('.userSearchRecipe').append(` 
                     
                     <div class="recipe">
@@ -261,16 +268,25 @@ function searchRecipe() {
                         <span class="veggie">VEG</span>
                     </div>
                     <div class="overview">
-                        <h3>${response.recipe.label}</h3>
+                        <h4>${response.recipe.label}</h4>
+                        <a href="${response.recipe.url}"><button>Get Recipe</button></>
         
                         
                     </div>
-                </div>                
+                   
+                </div>   
+                             
                 `);
+
+
         });
       });
     }
   });
+
+  
 }
+
+
 
 searchRecipe();
