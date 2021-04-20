@@ -30,7 +30,9 @@
                     <span class="veggie">VEG</span>
                 </div>
                 <div class="overview">
-                    <h3>${response.recipe.label}</h3>
+                    <h4>${response.recipe.label}</h4>
+                    <a href="#" onclick='window.open("${response.recipe.url}");return false;'><button>Get Recipe<button></a>
+                    
                     
                     
                 </div>
@@ -70,7 +72,8 @@
                         <span class="veggie">VEG</span>
                     </div>
                     <div class="overview">
-                        <h3>${response.recipe.label}</h3>
+                        <h4>${response.recipe.label}</h4>
+                        <a href="#" onclick='window.open("${response.recipe.url}");return false;'><button>Get Recipe<button></a>
         
                         
                     </div>
@@ -107,7 +110,8 @@
                             <span class="veggie">VEG</span>
                         </div>
                         <div class="overview">
-                            <h3>${response.recipe.label}</h3>
+                            <h4>${response.recipe.label}</h4>
+                            <a href="#" onclick='window.open("${response.recipe.url}");return false;'><button>Get Recipe<button></a>
             
                             
                         </div>
@@ -145,7 +149,8 @@
                               <span class="veggie">VEG</span>
                           </div>
                           <div class="overview">
-                              <h3>${response.recipe.label}</h3>
+                              <h4>${response.recipe.label}</h4>
+                              <a href="#" onclick='window.open("${response.recipe.url}");return false;'><button>Get Recipe<button></a>
               
                               
                           </div>
@@ -183,7 +188,8 @@
                             <span class="veggie">VEG</span>
                         </div>
                         <div class="overview">
-                            <h3>${response.recipe.label}</h3>
+                            <h4>${response.recipe.label}</h4>
+                            <a href="#" onclick='window.open("${response.recipe.url}");return false;'><button>Get Recipe<button></a>
             
                             
                         </div>
@@ -221,7 +227,9 @@
                               <span class="veggie">VEG</span>
                           </div>
                           <div class="overview">
-                              <h3>${response.recipe.label}</h3>
+                              <h4>${response.recipe.label}</h4>
+                              <a href="#" onclick='window.open("${response.recipe.url}");return false;'><button>Get Recipe<button></a>
+              
               
                               
                           </div>
@@ -269,7 +277,8 @@ function searchRecipe() {
                     </div>
                     <div class="overview">
                         <h4>${response.recipe.label}</h4>
-                        <a href="${response.recipe.url}"><button>Get Recipe</button></>
+                        
+                        <a href="#" onclick='window.open("${response.recipe.url}");return false;'><button>Get Recipe<button></a>
         
                         
                     </div>
