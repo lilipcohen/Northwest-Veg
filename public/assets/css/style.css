@@ -202,6 +202,27 @@ body {
   flex: 1 0 auto;
 }
 
+.facilityinfo {
+  text-align: center;
+  margin: 0 50px;
+}
+
+.facilitydesc {
+  background-color: white;
+  padding: 50px;
+  font-size: 18px;
+  
+}
+
+#facilitybutton {
+  position: absolute;
+  z-index: 1;
+  margin-top: -60px;
+  margin-left: -50px;
+}
+
+
+
 .footer {
   flex-shrink: 0;
 }
