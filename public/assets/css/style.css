@@ -27,6 +27,12 @@ h1 {
   font-family: "Lobster";
 }
 
+.card-title {
+  font-family: "Poppins" !important;
+  font-size: 2rem !important;
+  background-color: rgb(0,0,0,.5);
+}
+
 .box {
   max-width: 400px;
   background: white;
