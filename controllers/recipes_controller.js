@@ -7,7 +7,7 @@ async function fetchRecipes(categoryquery) {
     process.env.API_ID +
     "&app_key=" +
     process.env.API_KEY +
-    "&from=0&to=10&health=vegan" +
+    "&from=0&to=12&health=vegan" +
     categoryquery;
   const response = await fetch(queryURL);
 
@@ -26,7 +26,7 @@ module.exports = {
       process.env.API_ID +
       "&app_key=" +
       process.env.API_KEY +
-      "&from=0&to=10&health=vegan";
+      "&from=0&to=12&health=vegan";
 
     const response = await fetch(queryURL);
     const result = await response.json();
