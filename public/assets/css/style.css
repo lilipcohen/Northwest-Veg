@@ -93,6 +93,7 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .recipe {
@@ -120,6 +121,15 @@ main {
 
 .recipe-info h3 {
   margin-top: 0;
+
+}
+
+.breakfast {
+  padding: 48px 0;
+}
+
+.dessert {
+  padding: 25px 0;
 }
 
 .recipe-info span {
@@ -160,6 +170,10 @@ main {
 .container-recipe {
   display: flex;
   flex-wrap: wrap;
+}
+
+.container {
+  width: 100% !important;
 }
 
 #form-container {
