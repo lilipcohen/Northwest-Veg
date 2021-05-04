@@ -93,6 +93,8 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 .recipe {
@@ -120,6 +122,15 @@ main {
 
 .recipe-info h3 {
   margin-top: 0;
+
+}
+
+.breakfastlabel {
+  padding: 48px 0;
+}
+
+.dessert {
+  padding: 25px 0;
 }
 
 .recipe-info span {
@@ -162,6 +173,10 @@ main {
   flex-wrap: wrap;
 }
 
+.container {
+  width: 100% !important;
+}
+
 #form-container {
   background: rgba(255, 255, 255, 0.9);
   color: var(--secondary-color);
@@ -201,6 +216,27 @@ body {
 .content {
   flex: 1 0 auto;
 }
+
+.facilityinfo {
+  text-align: center;
+  margin: 0 50px;
+}
+
+.facilitydesc {
+  background-color: white;
+  padding: 50px;
+  font-size: 18px;
+  
+}
+
+#facilitybutton {
+  position: absolute;
+  z-index: 1;
+  margin-top: -60px;
+  margin-left: -50px;
+}
+
+
 
 .footer {
   flex-shrink: 0;
