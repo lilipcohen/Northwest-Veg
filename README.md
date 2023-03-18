@@ -2,7 +2,7 @@
   
 ![GitHub](https://img.shields.io/badge/license-MIT-green)
 
-<a href="https://northwest-veg.herokuapp.com/">Click here to see it in action.</a>
+<a href="https://northwest-veg.herokuapp.com/">Click here to see it in actio.</a>
 
 ## Table of Contents
 * [Description](#description)
